@@ -1,41 +1,60 @@
-# Prerequisites
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS folder attributes
+Icon?
+._*
+
+# Thumbnails
+._.DS_Store
+._*.png
+
+# Arduino build files (Mac/Linux/Windows)
+*.hex
+*.elf
+*.bin
+*.eep
+*.map
 *.d
-
-# Compiled Object files
-*.slo
-*.lo
 *.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
-*.lib
+*.s
 
-# Executables
-*.exe
-*.out
-*.app
+# Arduino sketch build folders
+/build/
+/*.cpp
+/*.h
 
-# debug information files
-*.dwo
+# Arduino IDE generated files
+*.ino.cpp
+*.ino.d
+*.ino.elf
+*.ino.hex
+*.ino.bin
+*.ino.eep
+*.ino.map
+*.ino.o
+
+# Arduino CLI temporary files
+arduino-sketch-*
+
+# VS Code/PlatformIO (if used)
+.vscode/
+.pio/
+*.sdf
+*.opensdf
+*.tlog
+
+# Backup files
+*~
+*.bak
+*.swp
+
+# Logs
+*.log
+
+# Arduino libraries compiled cache (optional)
+__pycache__/
+.cache/
