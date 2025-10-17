@@ -27,8 +27,8 @@ void setup() {
   motor.linkDriver(&driver);
 
   motor.sensor_direction = Direction::CW;
-  motor.voltage_limit = 5.0;  // 2.0
-  motor.velocity_limit = 100; // 20
+  motor.voltage_limit = 3.0;
+  motor.velocity_limit = 100;
   motor.controller = MotionControlType::velocity;
   motor.foc_modulation = FOCModulationType::SinePWM;
 
@@ -37,7 +37,6 @@ void setup() {
   motor.PID_velocity.I = 0.5;
   motor.PID_velocity.D = 0.0;
   motor.LPF_velocity.Tf = 0.05;
-  motor.P_angle.P = 4.0;
   motor.motion_downsample = 10;
 
   motor.init();

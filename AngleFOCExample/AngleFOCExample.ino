@@ -36,12 +36,12 @@ void setup() {
   motor.P_angle.D = 0.0;
   motor.LPF_angle.Tf = 0.01;
 
-  motor.PID_velocity.P = 0.2;
-  motor.PID_velocity.I = 1.0;
+  // Default PID and filters
+  motor.PID_velocity.P = 0.25;
+  motor.PID_velocity.I = 0.5;
   motor.PID_velocity.D = 0.0;
   motor.LPF_velocity.Tf = 0.05;
-
-  motor.motion_downsample = 5;
+  motor.motion_downsample = 10;
 
   motor.init();
   motor.initFOC();
