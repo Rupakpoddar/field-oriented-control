@@ -26,6 +26,11 @@ void setup() {
   Serial.println("=== Motor Knob with Detents ===");
   Serial.println("Rotate the motor shaft by hand");
   Serial.println("Steps at every 10 degrees, limits at 0-300 degrees");
+  Serial.println("Commands:");
+  Serial.println("  s[number]: set detent strength (s2.0)");
+  Serial.println("  d[number]: set damping (d0.8)");
+  Serial.println("  ?        : show current settings");
+  Serial.println("-----------------------------------");
 
   Wire.begin(12, 13); // SDA, SCL
   sensor.init();
